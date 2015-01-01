@@ -36,11 +36,11 @@ begin
 rescue
 	if retry_counter < 5
 	retry_counter+=1
-	puts "画像の取得に失敗しました。リトライします。#{retry_counter}回目"
+	puts "エラーが発生しました。リトライします。#{retry_counter}回目"
 		sleep(5)
 		redo
 	else
-	puts "画像の取得を諦めました。次の画像を取得します"
+	puts "リトライをあきらめました。次の画像を取得します"
 		retry_counter=0
 		next
 	end	
