@@ -4,7 +4,7 @@ require 'nokogiri'
 agent=Mechanize.new
 
 #画像のあるページの１ページ目から順に取得していく。
-page=agent.get("http://g.e-hentai.org/s/5591cb41ec/631426-1")
+page=agent.get("http://g.e-hentai.org/s/sample-page/sample-page-1")
 #タイトル名を取得
 filename=page.search("h1").children.text
 
